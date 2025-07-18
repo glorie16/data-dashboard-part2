@@ -1,0 +1,83 @@
+# Web Development Project 5 - *Petfinder*
+
+Submitted by: **Gloriele Mendoza**
+
+This web app: **allows users to search for adoptable pets. Filters can be added to narrow search.**
+
+Time spent: **20** hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [X] **The site has a dashboard displaying a list of data fetched using an API call**
+  - The dashboard should display at least 10 unique items, one per row
+  - The dashboard includes at least two features in each row
+- [X] **`useEffect` React hook and `async`/`await` are used**
+- [X] **The app dashboard includes at least three summary statistics about the data** 
+  - The app dashboard includes at least three summary statistics about the data, such as:
+    - *insert details here*
+- [X] **A search bar allows the user to search for an item in the fetched data**
+  - The search bar **correctly** filters items in the list, only displaying items matching the search query
+  - The list of results dynamically updates as the user types into the search bar
+- [X] **An additional filter allows the user to restrict displayed items by specified categories**
+  - The filter restricts items in the list using a **different attribute** than the search bar 
+  - The filter **correctly** filters items in the list, only displaying items matching the filter attribute in the dashboard
+  - The dashboard list dynamically updates as the user adjusts the filter
+
+The following **optional** features are implemented:
+
+- [X] Multiple filters can be applied simultaneously
+- [X] Filters use different input types
+  - e.g., as a text input, a dropdown or radio selection, and/or a slider
+- [ ] The user can enter specific bounds for filter values
+
+The following **additional** features are implemented:
+
+* [ ] List anything else that you added to improve the site's functionality!
+
+## Video Walkthrough
+
+Video Link on Imgur:
+
+<!-- Replace this with whatever GIF tool you used! -->
+Video created with...
+- Zoom for recording
+- Uploaded onto Imgur
+
+## Notes
+
+NOTE: Had to create a small backend server because the Petfinder API I used is an OAuth API. Cors kept blocking my API calls but 
+creating a backend resolved this. Code is in the server folder.
+
+- It was difficult making the filters work properly together without crashing.
+- It was also difficult to understand how to get around errors with my API.
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
