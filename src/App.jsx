@@ -3,6 +3,7 @@ import PetList from './components/PetList'
 import Summary from './components/Summary'
 import './App.css'
 import Filters from './components/Filters'
+import Header from './components/Header'
 
 function App() {
   const [pets, setPets] = useState([])
@@ -51,7 +52,7 @@ function App() {
   
   return (
     <div className="app-container">
-            <h1 className="title">Adoptable Pets</h1>
+            <Header/>
          <Filters className="filters"
         searchInput={searchInput}
         selectedAge={selectedAge}
@@ -59,13 +60,14 @@ function App() {
         setSelectedAge={setSelectedAge}/>
      
       <div className="main-items">
-    <Summary
-        pets={pets}>
-      </Summary>
-      
+ 
       <PetList
         pets={filteredResults ||[]}
         ></PetList>
+           <Summary
+        pets={pets}>
+      </Summary>
+      
         </div>
       
     </div>

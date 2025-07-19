@@ -13,8 +13,19 @@
 
 .main-items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding:1rem;
 }
+
+.pet-list{
+  flex:1;
+}
+
+  .summary{
+    flex:1;
+    max-width:300px
+  }
+
 
 .header{
   background-color: wheat;
