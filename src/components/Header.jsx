@@ -18,7 +18,7 @@ function Header() {
         zIndex: 1000, // stays on top
       }}
     >
-      <h1 style={{ margin: 0, fontSize:'1.2rem' }}>Adoptable Pets</h1>
+      <h1 style={{ margin: 0, fontSize:'1.5rem' }}>Adoptable Pets!🐾</h1>
     </header>
   );
 }

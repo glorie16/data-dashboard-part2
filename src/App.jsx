@@ -4,6 +4,7 @@ import Summary from './components/Summary'
 import './App.css'
 import Filters from './components/Filters'
 import Header from './components/Header'
+import Sidebar from './components/Sidebar'
 
 function App() {
   const [pets, setPets] = useState([])
@@ -52,25 +53,30 @@ function App() {
   
   return (
     <div className="app-container">
-            <Header/>
+
+      <div className="top-items">
+        <Header className="header"/>
          <Filters className="filters"
         searchInput={searchInput}
         selectedAge={selectedAge}
         setSearchInput={setSearchInput}
         setSelectedAge={setSelectedAge}/>
      
-      <div className="main-items">
- 
+      </div>
+      <div className="body-container">
+           <Sidebar></Sidebar>
+     
+      <div className="main-items">  
       <PetList
         pets={filteredResults ||[]}
         ></PetList>
            <Summary
         pets={pets}>
-      </Summary>
-      
-        </div>
-      
-    </div>
+        </Summary> 
+
+       </div>
+      </div>
+      </div>
   )
 }
 

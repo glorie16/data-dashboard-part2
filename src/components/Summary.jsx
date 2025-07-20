@@ -82,7 +82,7 @@ const getMostCommonBreedWithType = (pets) => {
                         </div>
                 
                     <div className="sum-card">
-                            <ul>Animal Types:<br/>
+                            <ul>Animal Types<br/>
                         {Object.entries(typeCounts).map(([type, count]) => (
                         <li key={type}>{type}: {count}</li>
                         ))}

@@ -12,28 +12,21 @@ function Filters({ setSearchInput, setSelectedAge, searchInput, selectedAge }) {
 
     return (
         <div className="filters">
-            
-            <button onClick={() => {
-            setSearchInput('');
-            setSelectedAge('');
-            }}>
-            Clear Filters
-            </button>
+            <h5>Search by animal type</h5>
             <div className="by-type">
-                <h2>Filter By Pet Type</h2>
-            
+               
         <input
         type="text"
-                placeholder="Search by pet type..."
+                    placeholder="eg., dog, cat, bird"
         onChange={handleInputChange}
         value={searchInput}
                 />
                 </div>
 
             <div className="by-age">
-            <h2>Age Range</h2>
+            <h5>Age Range</h5>
             {ageGroups.map(age => (
-                <label key={age}>
+                <label className="rad-buttons"key={age}>
                     <input
                     type="radio"
                     name="age"
@@ -44,6 +37,13 @@ function Filters({ setSearchInput, setSelectedAge, searchInput, selectedAge }) {
                     {age}
                 </label>
             ))}
+                
+                 <button className="submit"onClick={() => {
+            setSearchInput('');
+            setSelectedAge('');
+            }}>
+            Clear Filters
+            </button>
                 </div>
         </div>
 )
