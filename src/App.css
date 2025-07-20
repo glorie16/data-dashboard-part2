@@ -92,7 +92,7 @@ flex-grow:1;
   background-color: #fafafa;
   border-bottom: 1px solid #ddd;
 
-  height: 40px;             /* fix the height to a thin strip */
+  height: 42px;             /* fix the height to a thin strip */
   align-items: center;      /* vertically center items */
 }
 
