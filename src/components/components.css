@@ -11,31 +11,30 @@
   color: #333;
 }
 
-
 .layout-wrapper{
     display:flex;
     flex-direction: row;
-
 }
 
 .home-link{
     bottom:0;
     right:0;
 }
-.main-content{
-      width: 100vw;
-  max-width: 100%;
 
+.main-content{
+  width: 100vw;
+  max-width: 100%;
   margin-top:25px;
 }
+
 .main-photo{
-      width:100%;
-      max-width:300px;
+  width:100%;
+  max-width:300px;
   max-height: 300px;
   border-radius: 8px;
   display: block;
-   margin: 0 auto;
-   object-fit: cover;
+  margin: 0 auto;
+  object-fit: cover;
 }
 
 /* Pet image */
@@ -113,7 +112,6 @@ p {
   color: #ff8533;
   padding-left: 1.5rem;
 }
-
 
 h3 {
   margin-top: 2rem;

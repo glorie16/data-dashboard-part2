@@ -5,7 +5,6 @@
 }
 */
 
-
 .app-container{
   display: flex;
   flex-direction: column;
@@ -87,7 +86,6 @@ flex-grow:1;
   background-color: wheat;
   width:100%
 }
-
 
 .filters {
   margin-top:35px;
