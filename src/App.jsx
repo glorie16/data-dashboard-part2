@@ -4,7 +4,7 @@ import Summary from './components/Summary'
 import './App.css'
 import Filters from './components/Filters'
 import Header from './components/Header'
-import Sidebar from './components/Sidebar'
+import PetCharts from './components/PetCharts'
 
 function App() {
   const [pets, setPets] = useState([])
@@ -69,11 +69,14 @@ function App() {
       <div className="main-items">  
       <PetList
         pets={filteredResults ||[]}
-        ></PetList>
+          ></PetList>
+          
+          <div className="last-column">
            <Summary
         pets={pets}>
         </Summary> 
-
+            <PetCharts pets={pets} />
+            </div>
        </div>
       </div>
       </div>

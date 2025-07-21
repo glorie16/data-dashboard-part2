@@ -63,12 +63,19 @@ flex-grow:1;
 }
 
 .pet-list {
-    flex: 3 1 300px; /* flex-grow:1, shrink:1, basis:300px */
+    flex: 3 1 300px; 
   min-width: 0; /* important to prevent overflow */
 }
 
+.charts{
+  max-width:300px;
+}
+
+.last-column{
+ flex: 1 1 300px; 
+}
 .summary {
-  flex: 1 1 300px; /* flex-grow:1, shrink:1, basis:300px */
+ /* flex-grow:1, shrink:1, basis:300px */
   max-width: 300px;
   background-color: wheat;
   border-radius: 10px;
