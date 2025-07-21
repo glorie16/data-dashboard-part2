@@ -91,8 +91,33 @@ app.get('/api/pets', async (req, res) => {
     console.error('Error fetching pets:', error)
     res.status(500).json({ error: error.message })
   }
+
+  
 })
 
 app.listen(3001, () => {
   console.log('✅ Server running at http://localhost:3001')
 })
+
+// NEW ROUTE: get single animal by ID
+app.get('/api/pets/:id', async (req, res) => {
+  try {
+    const token = await getAccessToken();
+
+    const response = await fetch(`https://api.petfinder.com/v2/animals/${req.params.id}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch animal ${req.params.id}: ${response.status}`);
+    }
+
+    const data = await response.json();
+    res.json(data.animal);
+  } catch (error) {
+    console.error('Error fetching animal details:', error);
+    res.status(500).json({ error: error.message });
+  }
+});

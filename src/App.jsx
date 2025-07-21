@@ -64,7 +64,7 @@ function App() {
      
       </div>
       <div className="body-container">
-           <Sidebar></Sidebar>
+          
      
       <div className="main-items">  
       <PetList

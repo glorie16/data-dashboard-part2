@@ -1,0 +1,136 @@
+
+.pet-detail-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #fffdf6, #fff0e6);
+  border: 3px solid #ffd6cc;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 181, 138, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+
+.layout-wrapper{
+    display:flex;
+    flex-direction: row;
+
+}
+
+.home-link{
+    bottom:0;
+    right:0;
+}
+.main-content{
+      width: 100vw;
+  max-width: 100%;
+
+  margin-top:25px;
+}
+.main-photo{
+      width:100%;
+      max-width:300px;
+  max-height: 300px;
+  border-radius: 8px;
+  display: block;
+   margin: 0 auto;
+   object-fit: cover;
+}
+
+/* Pet image */
+.pet-detail-container .images {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(255, 153, 102, 0.3);
+  margin-bottom: 1rem;
+}
+
+/* Description box */
+.descrip {
+  background: #ffffff;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #ffa07a;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.descrip h4, h2, h3 {
+  margin-top: 0;
+  color: #ff6600;
+}
+
+/* Info table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  background-color: #fffef9;
+  border: 2px solid #ffe1cc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ffecd9;
+  text-align: left;
+}
+
+th {
+  background-color: #fff0e1;
+  color: #cc5200;
+  font-weight: bold;
+  width: 35%;
+}
+
+td {
+  color: #444;
+}
+
+/* Contact and link styling */
+a {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+/* Tags list */
+.ul-det {
+  list-style-type: square;
+  color: #ff8533;
+  padding-left: 1.5rem;
+}
+
+
+h3 {
+  margin-top: 2rem;
+  color: #e67300;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .pet-detail-container {
+    padding: 1rem;
+  }
+
+  .pet-detail-container .images {
+    width: 100%;
+  }
+
+  table, th, td {
+    font-size: 0.95rem;
+  }
+}

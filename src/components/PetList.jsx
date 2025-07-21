@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import "./components.css"
+
 function PetList({ pets }) {
     console.log('Rendering PetList with pets:', pets.map(p => `${p.id} - ${p.name}`))
   if (!pets.length) {
@@ -11,19 +14,21 @@ function PetList({ pets }) {
   return (
     <ul className="pet-list">
       {pets.map((pet) => (
-        <li key={pet.id} className="pet-card">
+        <Link key={pet.id} to={`/pets/${pet.id}`}>
+        <li className="pet-card">
           <h2>{pet.name}</h2>
           {pet.photos[0] && (
-            <img
+            <img className="main-photo"
               src={pet.photos[0].medium}
               alt={pet.name}
-              width="200"
             />
           )}
               <p>{pet.breeds.primary} | {pet.type}</p>
               <p> {pet.gender} | {pet.age}</p>
-        </li>
+          </li>
+          </Link>
       ))}
+          
     </ul>
   )
 }
