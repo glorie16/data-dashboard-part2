@@ -36,21 +36,16 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of my project (with sound/voiceover):
+Imgur Video Link: https://imgur.com/a/ToCqI8n
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+- Recorded with Zoom
+- Uploaded onto Imgur
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-- Struggled a lot with css
+- Struggled a lot with css, would improve it if I had more time
 - Routes weren't too difficult to understand but layout.jsx was confusing!
 
 ## License
