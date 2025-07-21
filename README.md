@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of my project:
+Here's a walkthrough of my project (with sound/voiceover):
 Imgur Video Link: https://imgur.com/a/ToCqI8n
 
 - Recorded with Zoom
